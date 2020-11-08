@@ -1,5 +1,5 @@
 # tpnro4-RoblesJP
-### ![kirby](https://imgur.com/5gxBGkQ) Robles, Juan Pablo ![kirby](https://imgur.com/5gxBGkQ)
+### ![kirby](https://i.imgur.com/5gxBGkQ.png) Robles, Juan Pablo ![kirby](https://i.imgur.com/5gxBGkQ.png)
 
 
  

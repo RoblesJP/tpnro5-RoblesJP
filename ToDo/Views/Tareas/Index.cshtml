@@ -1,0 +1,28 @@
+﻿@model List<ToDo.Models.Tarea>
+@{
+    ViewData["Title"] = "Tareas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de tareas</h1>
+
+<table class="table table-sm w-75 justify-content-center" style="margin: 2rem auto">
+    <tr>
+        <th>ID</th>
+        <th>DESCRIPCION</th>
+        <th>DURACION</th>
+        <th>ESTADO</th>
+    </tr>
+    @{
+        foreach (Tarea t in @Model)
+        {
+            <tr>
+                <td>@t.Id</td>
+                <td>@t.Descripcion</td>
+                <td>@t.Duracion</td>
+                <td>@t.Estado</td>
+            </tr>
+        }
+    }
+</table>
+

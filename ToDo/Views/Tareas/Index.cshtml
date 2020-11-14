@@ -1,4 +1,5 @@
-﻿@model List<ToDo.Models.Tarea>
+﻿@using ToDo.Entidades;
+@model List<ToDo.Entidades.Tarea>;
 @{
     ViewData["Title"] = "Tareas";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,8 +14,8 @@
         <th>DURACION</th>
         <th>ESTADO</th>
     </tr>
-    @{
-        foreach (Tarea t in @Model)
+    @{  
+        foreach (Tarea t in Model)
         {
             <tr>
                 <td>@t.Id</td>
@@ -23,6 +24,11 @@
                 <td>@t.Estado</td>
             </tr>
         }
+        <tr class="text-center">
+            <td colspan="4">
+                <button type="button" class="btn-success justify-content-center">CARGAR TAREA</button>
+            </td>
+        </tr>
     }
 </table>
 

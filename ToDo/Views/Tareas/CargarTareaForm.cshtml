@@ -1,0 +1,22 @@
+﻿@model ToDo.Entidades.Tarea
+@{
+    ViewData["Title"] = "CargarTareaForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="w-25" asp-action="CargarTarea" method="post">
+    <div class="form-group">
+        <label asp-for="Descripcion"></label>
+        <input class="form-control" asp-for="Descripcion" placeholder="Descripcion de la tarea" />
+        <span asp-validation-for="Descripcion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Duracion"></label>
+        <input class="form-control" asp-for="Duracion" />
+        <span asp-validation-for="Duracion"></span>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success justify-content-center d-inline-block" type="submit">CARGAR TAREA</button>
+    </div>
+</form>
+

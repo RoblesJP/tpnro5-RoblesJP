@@ -1,0 +1,26 @@
+﻿@model ToDo.Entidades.Tarea
+@{
+    ViewData["Title"] = "ModificarTareaForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="w-25" asp-action="ModificarTarea" method="post">
+    <fieldset>
+        <legend>Modificar tarea ID:@Model.Id</legend>
+        @Html.HiddenFor(model => model.Id)
+        <div class="form-group">
+            <label asp-for="Descripcion">Nueva Descripcion</label>
+            <input class="form-control" asp-for="Descripcion" placeholder="Descripcion de la tarea" />
+            <span asp-validation-for="Descripcion"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Duracion">Nueva Duracion</label>
+            <input class="form-control" asp-for="Duracion" />
+            <span asp-validation-for="Duracion"></span>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success justify-content-center d-inline-block" type="submit">ACEPTAR</button>
+        </div>
+    </fieldset>
+</form>
+
